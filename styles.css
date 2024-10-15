@@ -8,98 +8,67 @@
 body {
     background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
 }
 
 header {
     background-color: #005f73;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
-header h1 {
-    font-size: 3rem;
+h1 {
+    font-size: 2rem;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-}
-
-.intro-text {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.intro-text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #007f5f;
-}
-
-.intro-text p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.loan-form {
-    background-color: white;
-    padding: 30px;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #333;
-}
-
-.form-group input,
-.form-group textarea {
+input, textarea, button {
     width: 100%;
     padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #007f5f;
-    outline: none;
-}
-
-button[type="submit"] {
+button {
     background-color: #007f5f;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
     cursor: pointer;
-    width: 100%;
+    font-size: 1.1rem;
 }
 
-button[type="submit"]:hover {
+button:hover {
     background-color: #005f73;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 4px;
+    visibility: hidden; /* Controlaremos a visibilidade com CSS */
+}
+
+.resultado-mostrar {
+    visibility: visible; /* Classe que vamos adicionar para mostrar o resultado */
 }
 
 footer {
+    text-align: center;
+    padding: 10px;
     background-color: #005f73;
     color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
+    margin-top: 20px;
 }

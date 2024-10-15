@@ -17,7 +17,7 @@
             <p>Preencha o formulário abaixo para solicitar um empréstimo de maneira fácil e rápida. Nossa equipe entrará em contato para continuar com o processo.</p>
         </div>
 
-        <form class="loan-form">
+        <form class="loan-form" id="loan-form">
             <div class="form-group">
                 <label for="nome">Nome Completo</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
@@ -50,10 +50,16 @@
 
             <button type="submit">Enviar Solicitação</button>
         </form>
+
+        <div id="resultado">
+            <!-- Resultados da simulação -->
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2024 - Empréstimos Seguros. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
